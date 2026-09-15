@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (~ vNUSROL_TRAJ_0 & vNUSROL_TRAJ_1) |  (vNUSR_TRAH_1 |  (vS6913OL__REL_JS_0 |  vS6913OL__REL_JS_1)))).
-
-fof(ax,conjecture, (~ (~ vNUSROL_TRAJ_1 & vNUSROL_TRAJ_2) |  (vNUSR_TRAH_2 |  (vS6913OL__REL_JS_1 |  vS6913OL__REL_JS_2))) & 
-$true) .

@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (~ vTRZG_CLR_IL__0 & ~ vNUSR__N_P1944_0) |  ((((~ vNUSR__N_P1946A_0 |  ~ vNUSR__N_P1946B_0) |  ~ vNUSR__N_P1954_0) |  ((~ vNUSR__R_P1946A_0 |  ~ vNUSR__R_P1946B_0) |  ~ vNUSR__R_P1954_0)) |  ((((~ vNUSR__R_P1947_0 |  ~ vNUSR__R_P1948_0) |  ~ vNUSR__R_P1950_0) |  ~ vNUSR__R_P1952_0) |  (((~ vNUSR__N_P1947_0 |  ~ vNUSR__N_P1948_0) |  ~ vNUSR__N_P1950_0) |  ~ vNUSR__N_P1952_0))))).
-
-fof(ax,conjecture, (~ (~ vTRZG_CLR_IL__1 & ~ vNUSR__N_P1944_1) |  ((((~ vNUSR__N_P1946A_1 |  ~ vNUSR__N_P1946B_1) |  ~ vNUSR__N_P1954_1) |  ((~ vNUSR__R_P1946A_1 |  ~ vNUSR__R_P1946B_1) |  ~ vNUSR__R_P1954_1)) |  ((((~ vNUSR__R_P1947_1 |  ~ vNUSR__R_P1948_1) |  ~ vNUSR__R_P1950_1) |  ~ vNUSR__R_P1952_1) |  (((~ vNUSR__N_P1947_1 |  ~ vNUSR__N_P1948_1) |  ~ vNUSR__N_P1950_1) |  ~ vNUSR__N_P1952_1)))) & 
-$true) .

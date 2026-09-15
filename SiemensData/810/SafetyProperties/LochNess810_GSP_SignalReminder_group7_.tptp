@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (~ vS6909_DM__U_0 & vS6909_DM__U_1) |  ((~ vS6909_RD_1 |  (vS6909_QRDZ_0 |  vS6909_QRDZ_1)) & (~ vSBS4_RD_1 |  (vSBS4_QRDZ_0 |  vSBS4_QRDZ_1))))).
-
-fof(ax,conjecture, (~ (~ vS6909_DM__U_1 & vS6909_DM__U_2) |  ((~ vS6909_RD_2 |  (vS6909_QRDZ_1 |  vS6909_QRDZ_2)) & (~ vSBS4_RD_2 |  (vSBS4_QRDZ_1 |  vSBS4_QRDZ_2)))) & 
-$true) .

@@ -31,37 +31,7 @@ namespace SwanLLVerifier.LadderLogic
             return allVariables;
         }
 
-        // public ISet<string> AllInputs()
-        // {
-        //     HashSet<string> allVariables = new();
-
-        //     // firstly get all variables from all rungs
-        //     // then remove the outputs from the set of all variables
-        //     // this will give us all the inputs
-
-        //     Console.WriteLine("Calculating all input variables...");
-
-
-        //     foreach (Rung rung in Rungs)
-        //     {
-
-        //         foreach (string variable in rung.AllVariables())
-        //         {
-        //             if (!rung.output.Equals(variable))
-        //             {
-        //                 _ = allVariables.Add(variable);
-        //             }
-        //         }
-
-
-        //     }
-        //     // remove all outputs from the set of all variables // There is possibility of some outputs still being in the set
-        //     foreach (Rung rung in Rungs)
-        //     {
-        //         _ = allVariables.Remove(rung.output);
-        //     }
-        //     return allVariables;
-        // }
+     
 
         public ISet<string> AllOutputVariables()
         {

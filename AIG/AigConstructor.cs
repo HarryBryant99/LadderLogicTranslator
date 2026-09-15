@@ -44,13 +44,7 @@ namespace SwanLLVerifier.AIG
             latchNamesAndValues = latchNameVal;
         }
 
-        // public void Decorate()
-        // {
-        //     AssignLiteralNumberToAllVariables();
-        //     DecorateLatches();
-        //     DecorateSafety();
-
-        // }
+     
 
         public void Decorate()
         {
@@ -58,21 +52,6 @@ namespace SwanLLVerifier.AIG
             AssignLiteralNumberToAllOutputs();
             DecorateLatchesMic();
             DecorateSafety();
-            // Console.WriteLine("=============== Decorated Latch Variables ================");
-            // foreach (KeyValuePair<string, int> kvp in decoratedLatchVariables)
-            //     Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
-            // Console.WriteLine("===========================================================");
-            // Console.WriteLine("=============== Decorated Var Names ================");
-            // foreach (KeyValuePair<string, int> kvp in decoratedVarNames)
-            //     Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
-            // Console.WriteLine("===========================================================");
-            // Console.WriteLine("=============== Decorated Var Names Next Cycle ================");
-            // foreach (KeyValuePair<string, int> kvp in decoratedVarNamesNextCycle)
-            //     Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
-            // Console.WriteLine("===========================================================");
-            // Console.WriteLine("Decorated safety property with the following values:");
-            // foreach (KeyValuePair<string, int> kvp in decoratedTrees)
-            //     Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
         }
 
         public static string FormatVarName(string varName)
@@ -93,23 +72,7 @@ namespace SwanLLVerifier.AIG
             return formattedVarName;
         }
 
-        // public void AssignLiteralNumberToAllVariables()
-        // {
-        //     foreach (string varName in ladder.AllVariables())
-        //     {
-        //         maxLiteralIndex += 2;
-        //         string formattedVarName = FormatVarName(varName);
-
-        //         if (!decoratedVarNames.ContainsKey(formattedVarName))
-        //             decoratedVarNames.Add(formattedVarName, maxLiteralIndex);
-
-        //         // also decorate the next cycle variable (_1) for the current variable
-        //         // with the same maxLiteralIndex decoration
-        //         if (!decoratedVarNamesNextCycle.ContainsKey($"{formattedVarName}_1"))
-        //             decoratedVarNamesNextCycle.Add($"{formattedVarName}_1", maxLiteralIndex);
-        //         Console.WriteLine($"Decorated variable: {formattedVarName} with value: {maxLiteralIndex}");
-        //     }
-        // }
+      
 
         public void AssignLiteralNumberToAllInputs()
         {
@@ -121,15 +84,7 @@ namespace SwanLLVerifier.AIG
                 // maxLiteralIndex += 2;
                 string formattedVarName = varName;
 
-                // if (varName.StartsWith("v")) // ladder.tptp has all variables starting with the character v
-                //     formattedVarName = varName.Substring(1, varName.Length - 1);
-
-                // if (varName.EndsWith("_0") || varName.EndsWith("_1")) //
-                //     formattedVarName = formattedVarName.Substring(0, formattedVarName.Length - 2);
-
-                // formattedVarName = formattedVarName.Replace(".", "_");
-                // formattedVarName = formattedVarName.Replace("(", "_");
-                // formattedVarName = formattedVarName.Replace(")", "_");
+            
 
                 formattedVarName = FormatVarName(formattedVarName);
 
@@ -163,15 +118,7 @@ namespace SwanLLVerifier.AIG
                 // maxLiteralIndex += 2;
                 string formattedVarName = varName;
 
-                // if (varName.StartsWith("v")) // ladder.tptp has all variables starting with the character v
-                //     formattedVarName = varName.Substring(1, varName.Length - 1);
-
-                // if (varName.EndsWith("_0") || varName.EndsWith("_1")) //
-                //     formattedVarName = formattedVarName.Substring(0, formattedVarName.Length - 2);
-
-                // formattedVarName = formattedVarName.Replace(".", "_");
-                // formattedVarName = formattedVarName.Replace("(", "_");
-                // formattedVarName = formattedVarName.Replace(")", "_");
+             
 
                 formattedVarName = FormatVarName(formattedVarName);
 
@@ -194,38 +141,6 @@ namespace SwanLLVerifier.AIG
             }
         }
 
-        // public void DecorateLatches()
-        // {
-        //     for (int i = 0; i < ladder.Rungs.Count; i++)
-        //     {
-        //         string rungOutput = ladder.Rungs[i].output;
-
-        //         // if (rungOutput.StartsWith("v")) // ladder.tptp has all variables starting with the character v
-        //         //     rungOutput = rungOutput.Substring(1, rungOutput.Length - 1);
-
-        //         // if (rungOutput.EndsWith("_0") || rungOutput.EndsWith("_1")) //
-        //         //     rungOutput = rungOutput.Substring(0, rungOutput.Length - 2);
-
-        //         // rungOutput = rungOutput.Replace(".", "_");
-        //         // rungOutput = rungOutput.Replace("(", "_");
-        //         // rungOutput = rungOutput.Replace(")", "_");
-
-        //         rungOutput = FormatVarName(rungOutput);
-
-        //         string latchVariable = $"{rungOutput}_LATCH";
-        //         int decoratedValue = DecorateFormulaTree(ladder.Rungs[i].formula, latchVariable);
-
-        //         if (decoratedValue < 2)
-        //             throw new ArgumentOutOfRangeException($"decoratedValue OutOfRange: {decoratedValue}");
-
-        //         if (!decoratedLatchVariables.ContainsKey(latchVariable))
-        //         {
-        //             decoratedLatchVariables.Add(latchVariable, decoratedValue);
-
-        //             //File.AppendAllText("latches.json", $"{latchVariable}: {decoratedValue},\n");
-        //         }
-        //     }
-        // }
 
         public void DecorateLatchesMic()
         {
@@ -239,15 +154,6 @@ namespace SwanLLVerifier.AIG
                 // Console.WriteLine($"Decorating rung {i}: {ladder.Rungs[i].output}");
                 string rungOutput = ladder.Rungs[i].output;
 
-                // if (rungOutput.StartsWith("v")) // ladder.tptp has all variables starting with the character v
-                //     rungOutput = rungOutput.Substring(1, rungOutput.Length - 1);
-
-                // if (rungOutput.EndsWith("_0") || rungOutput.EndsWith("_1")) //
-                //     rungOutput = rungOutput.Substring(0, rungOutput.Length - 2);
-
-                // rungOutput = rungOutput.Replace(".", "_");
-                // rungOutput = rungOutput.Replace("(", "_");
-                // rungOutput = rungOutput.Replace(")", "_");
 
                 rungOutput = FormatVarName(rungOutput);
 
@@ -284,67 +190,7 @@ namespace SwanLLVerifier.AIG
             // Console.WriteLine("Safety property decorated successfully.");
         }
 
-        // public int DecorateFormulaTree(AbstractFirstOrderFormula formula, string parentLatchVarName)
-        // {
-        //     int decoratedValue = -1;
-
-        //     switch (formula)
-        //     {
-        //         case Predicate:
-        //             Predicate p = (Predicate)formula;
-        //             string predName = p.Name;
-
-        //             if (p.Name.EndsWith("_0") || p.Name.EndsWith("_1"))
-        //                 predName = predName.Substring(0, predName.Length - 2);
-        //             if (predName.StartsWith("v")) // ladder.tptp has all variables starting with the character v
-        //                 predName = predName.Substring(1, predName.Length - 1);
-
-        //             predName = predName.Replace(".", "_");
-        //             predName = predName.Replace("(", "_");
-        //             predName = predName.Replace(")", "_");
-
-        //             if (decoratedVarNames.ContainsKey(predName))
-        //                 decoratedValue = decoratedVarNames[predName];
-        //             else if (decoratedVarNamesNextCycle.ContainsKey(predName))
-        //                 decoratedValue = decoratedVarNamesNextCycle[predName];
-        //             else if (decoratedLatchVariables.ContainsKey(predName))
-        //                 decoratedValue = decoratedLatchVariables[predName];
-        //             else
-        //                 throw new Exception("Expected predicate keys to be pre-included in a dictionary.");
-
-        //             break;
-
-        //         case Negation:
-        //             Negation neg = (Negation)formula;
-
-        //             decoratedValue = DecorateFormulaTree(neg.Operand, parentLatchVarName) + 1;
-        //             if (!decoratedTrees.ContainsKey($"{parentLatchVarName}_NEG_{decoratedValue}"))
-        //                 decoratedTrees.Add($"{parentLatchVarName}_NEG_{decoratedValue}", decoratedValue);
-
-        //             break;
-
-        //         case And:
-        //             And and = (And)formula;
-
-        //             int leftValue = DecorateFormulaTree(and.LeftOperand, parentLatchVarName);
-        //             int rightValue = DecorateFormulaTree(and.RightOperand, parentLatchVarName);
-
-        //             maxLiteralIndex += 2;
-        //             decoratedTrees.Add($"{parentLatchVarName}_AND_{maxLiteralIndex}_{leftValue}_{rightValue}", maxLiteralIndex);
-        //             decoratedValue = maxLiteralIndex;
-
-        //             break;
-
-        //         case Brackets:
-        //             Brackets br = (Brackets)formula;
-        //             decoratedValue = DecorateFormulaTree(br.Operand, parentLatchVarName);
-        //             break;
-
-        //     }
-
-        //     return decoratedValue;
-        // } // end DecorateFormulaTree
-
+        
         public int DecorateFormulaTree(AbstractFirstOrderFormula formula, string parentLatchVarName) // This function is recursive
         {
             int decoratedValue = -1;
@@ -380,18 +226,7 @@ namespace SwanLLVerifier.AIG
                         );
                     }
 
-                    // if (decoratedLatchVariables.ContainsKey(predName))
-
-                    // if (p.Name.EndsWith("_0") || p.Name.EndsWith("_1"))
-                    //     predName = predName.Substring(0, predName.Length - 2);
-                    // if (predName.StartsWith("v")) // ladder.tptp has all variables starting with the character v
-                    //     predName = predName.Substring(1, predName.Length - 1);
-
-                    // predName = predName.Replace(".", "_");
-                    // predName = predName.Replace("(", "_");
-                    // predName = predName.Replace(")", "_");
-
-                    // predName = FormatVarName(predName);
+                   
 
                     if (decoratedVarNames.ContainsKey(formattedpredName))
                         decoratedValue = decoratedVarNames[formattedpredName];
@@ -416,14 +251,7 @@ namespace SwanLLVerifier.AIG
 
                     // decoratedValue = DecorateFormulaTree(neg.Operand, parentLatchVarName) + 1;
                     decoratedValue = DecorateFormulaTree(neg.Operand, parentLatchVarName);
-                    // if decoratedValue is odd, console a warning message
-                    // if (decoratedValue % 2 != 0)
-                    // {
-                    //     Console.WriteLine(
-                    //         $"Warning: Decorated value {decoratedValue} for negation is odd. This may indicate an issue."
-                    //     );
-                    // }
-                    // if decoratedValue is an even number, increment by 1, else decrement by 1
+                    
                     decoratedValue =
                         (decoratedValue % 2 == 0) ? decoratedValue + 1 : decoratedValue - 1;
                     if (!decoratedTrees.ContainsKey($"{parentLatchVarName}_NEG_{decoratedValue}"))
@@ -451,28 +279,7 @@ namespace SwanLLVerifier.AIG
 
                 case And:
                     And and = (And)formula;
-                    // if and.LeftOperand Name appended with _LATCH already exists in decoratedLatchVariables
-                    // then we use that value
-                    // same for and.RightOperand
-                    // AbstractFirstOrderFormula leftOp = and.LeftOperand;
-                    // AbstractFirstOrderFormula rightOp = and.RightOperand;
-                    // if (and.LeftOperand is Predicate leftPred)
-                    // {
-                    //     if (decoratedLatchVariables.ContainsKey($"{leftPred.Name}_LATCH"))
-                    //     {
-                    //        leftPred.Name = $"{leftPred.Name}_LATCH";
-
-                    //     }
-                    // }
-                    // if (and.RightOperand is Predicate rightPred)
-                    // {
-                    //     if (decoratedLatchVariables.ContainsKey($"{rightPred.Name}_LATCH"))
-                    //     {
-                    //         rightPred.Name = $"{rightPred.Name}_LATCH";
-
-                    //     }
-                    // }
-                    // Console.WriteLine($"Decorating AND left operand: {PrettyPrinter.Prettify(and.LeftOperand)} and right operand: {PrettyPrinter.Prettify(and.RightOperand)}");
+          
 
                     int leftValue = DecorateFormulaTree(and.LeftOperand, parentLatchVarName);
                     int rightValue = DecorateFormulaTree(and.RightOperand, parentLatchVarName);
@@ -505,71 +312,7 @@ namespace SwanLLVerifier.AIG
             return decoratedValue;
         } // end DecorateFormulaTree
 
-        // public void ConstructAigerFile()
-        // {
-        //     IDictionary<int, int> latchLiteralsAndLatchInputs = new Dictionary<int, int>();
-
-        //     // are all coils latches? Probably YES (based on the examples that we've been doing). Confirm with MR later.
-        //     // mapping latch variable names to their latch literal names and their decorated values
-        //     foreach (string inputKey in decoratedLatchVariables.Keys)
-        //     {
-        //         string originalCoilName = inputKey.Replace("_LATCH", "");
-        //         latchLiteralsAndLatchInputs.Add(decoratedVarNames[originalCoilName], decoratedLatchVariables[inputKey]);
-        //     }
-
-        //     int numberOfLatches = decoratedLatchVariables.Count;
-
-        //     // if it's not a latch can we say that it's an input?
-        //     List<string> inputsOnly = new();
-        //     foreach (string varKey in decoratedVarNames.Keys)
-        //     {
-        //         if (!decoratedLatchVariables.ContainsKey($"{varKey}_LATCH"))
-        //             inputsOnly.Add(varKey);
-        //     }
-
-        //     // INPUTS
-        //     foreach (string inputKey in inputsOnly)
-        //         aigerFileLines.Add($"{decoratedVarNames[inputKey]}\n");
-
-        //     int numberOfInputs = inputsOnly.Count;
-
-        //     // LATCHES
-        //     foreach (int latchLiteral in latchLiteralsAndLatchInputs.Keys)
-        //     {
-        //         string correspondingLatchString = decoratedVarNames.FirstOrDefault(x => x.Value == latchLiteral).Key;
-        //         bool initialLatchValue = latchNamesAndValues[$"{correspondingLatchString}_LATCH"];
-        //         int convertedInitialLatchValue = initialLatchValue ? 1 : 0;
-
-        //         aigerFileLines.Add($"{latchLiteral} {latchLiteralsAndLatchInputs[latchLiteral]} {convertedInitialLatchValue}\n");
-        //     }
-
-        //     // OUTPUT (always 1 output only i.e. from safety property which is treated as a bad state literal)
-        //     // last value of the decoratedTrees dictionary is always the output of the safety property
-        //     aigerFileLines.Add($"{decoratedTrees.Values.Last()}\n");
-
-        //     // AND gates
-        //     int numberOfAndGates = 0;
-        //     foreach (string input_key in decoratedTrees.Keys)
-        //     {
-        //         if (input_key.Contains("_AND_"))
-        //         {
-        //             string[] splittedInputKey = input_key.Split('_').TakeLast(3).ToArray();
-        //             aigerFileLines.Add($"{splittedInputKey[0]} {splittedInputKey[1]} {splittedInputKey[2]}\n");
-        //             numberOfAndGates++;
-        //         }
-        //     }
-
-        //     int maxVariableIndex = numberOfInputs + numberOfLatches + numberOfAndGates;
-        //     // M I L O A BadStateLiteral
-        //     string firstLine = $"aag {maxVariableIndex} {numberOfInputs} {numberOfLatches} 0 {numberOfAndGates} 1\n";
-
-        //     Console.WriteLine("============= CREATING AIGERFILE ==============");
-        //     string fileName = "test.aag";
-        //     using StreamWriter writer = new StreamWriter(fileName);
-        //     writer.Write(firstLine);
-        //     foreach (string line in aigerFileLines)
-        //         writer.Write(line);
-        // }// end ConstructAigerFile
+      
         public void ConstructAigerFile(string fileName = "test.aag")
         {
             IDictionary<int, int> latchLiteralsAndLatchInputs = new Dictionary<int, int>();

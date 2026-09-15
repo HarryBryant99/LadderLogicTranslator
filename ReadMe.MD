@@ -2,18 +2,6 @@ Command to run the program:
 ```bash
 dotnet run --project LadderLogicTranslator.csproj
 ```
-
-AbstractFirstOrderFormula safety = 
-            MakeOr(
-                MakeOr(
-                    MakeAnd(MakeAnd(MakeAnd(varTG, MakeNegation(varTA)), MakeNegation(varTR)), MakeNegation(varTAF)), // // (((tg ^ ¬ ta) ^ ¬tr )^ ¬ taf)
-                    MakeAnd(MakeAnd(MakeAnd(MakeNegation(varTG), varTA), MakeNegation(varTR)), MakeNegation(varTAF)) // (¬ tg ^ ta ^ ¬ tr ^ ¬ taf)
-                ), //  // (((tg ^ ¬ ta) ^ ¬tr )^ ¬ taf) V (¬ tg ^ ta ^ ¬ tr ^ ¬ taf)
-                MakeOr(
-                    MakeAnd(MakeNegation(varTG), MakeAnd(MakeNegation(varTA), MakeAnd(varTR, MakeNegation(varTAF)))), // (¬ tg ^ (¬ ta ^ (tr ^ ¬ taf)))
-                    MakeAnd(MakeNegation(varTG), MakeAnd(MakeNegation(varTA), MakeAnd(MakeNegation(varTR), varTAF))) // (¬ tg ^ (¬ ta ^ (¬ tr ^ taf)))
-                ) // (¬ tg ^ ¬ ta ^ tr ^ ¬ taf) V (¬ tg ^ ¬ ta ^ ¬ tr ^ taf)
-            ); // (((tg ^ ¬ ta )^ ¬tr) ^ ¬ taf) V (¬ tg ^ ta ^ ¬ tr ^ ¬ taf) V (¬ tg ^ ¬ ta ^ tr ^ ¬ taf) V (¬ tg ^ ¬ ta ^ ¬ tr ^ taf)
             
 
 INSTRUCTION: Read all the Readme.txt files inside every subdirectory if present.

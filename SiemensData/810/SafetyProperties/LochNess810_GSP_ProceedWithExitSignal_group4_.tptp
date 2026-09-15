@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (~ vS6924_G_0 & (vS6924_G_1 & vS6924_BM__U_0)) |  vS6906__DEST_ASP_0)).
-
-fof(ax,conjecture, (~ (~ vS6924_G_1 & (vS6924_G_2 & vS6924_BM__U_1)) |  vS6906__DEST_ASP_1) & 
-$true) .

@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ ~ vNUSR__N_P1954_0 |  ~ vP1954_RL_0)).
-
-fof(ax,conjecture, (~ ~ vNUSR__N_P1954_1 |  ~ vP1954_RL_1) & 
-$true) .

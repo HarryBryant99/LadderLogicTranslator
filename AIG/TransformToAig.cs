@@ -256,20 +256,6 @@ namespace SwanLLVerifier.AIG
             // Console.WriteLine("\n============== After removing all ors ==============");
             // PrettyPrinter.PrettyPrint(eqTransformed3);
 
-            // AbstractFirstOrderFormula eqTransformed4 = CheckAndRemoveDoubleBrackets(eqTransformed3);
-            // // Console.WriteLine("\n============== After removing all DOUBLE BRACKETs ==============");
-            // // PrettyPrinter.PrettyPrint(eqTransformed4);
-
-            // AbstractFirstOrderFormula eqTransformed5 = CheckAndRemoveDoubleNegations(eqTransformed4);
-            // // Console.WriteLine("\n============== After removing all DOUBLE NEGATIONs [FINAL TRANSFORMATION STEP] ==============");
-            // // PrettyPrinter.PrettyPrint(eqTransformed5);
-
-            // Cancel out double negations
-            // e.g !(! x) -> x
-            // e.g !!x -> x
-            // AbstractFirstOrderFormula eqTransformed4 = CheckAndRemoveDoubleBrackets(eqTransformed3);
-            // Console.WriteLine("\n============== After removing all DOUBLE BRACKETs ==============");
-            // PrettyPrinter.PrettyPrint(eqTransformed4);
 
             return eqTransformed3;
         }

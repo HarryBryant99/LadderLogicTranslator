@@ -1,9 +1,4 @@
-﻿//using SwanLLVerifier.ETCSDC_Properties;
-//using static SwanLLVerifier.ETCSDC_Properties.AbstractFirstOrderFormula;
-//sing SwanLLVerifier.ETCSDC_Properties.OperatorTypes;
-//using SwanLLVerifier.ETCSDC_Properties.Operators;
-
-using Siemens.ETCSDC;
+﻿using Siemens.ETCSDC;
 using static Siemens.ETCSDC.Properties.AbstractFirstOrderFormula;
 using Siemens.ETCSDC.Properties;
 

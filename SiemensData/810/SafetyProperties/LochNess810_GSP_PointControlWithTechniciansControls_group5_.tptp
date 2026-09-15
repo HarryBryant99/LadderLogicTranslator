@@ -1,4 +1,0 @@
-fof(ax,axiom, ((~ vP1950_NLZ_1 |  (~ vP1950__RW_INHIBIT_0 |  vP1950_NL_0)) & (~ vP1950_RLZ_1 |  (~ vP1950__NW_INHIBIT_0 |  vP1950_RL_0)))).
-
-fof(ax,conjecture, ((~ vP1950_NLZ_2 |  (~ vP1950__RW_INHIBIT_1 |  vP1950_NL_1)) & (~ vP1950_RLZ_2 |  (~ vP1950__NW_INHIBIT_1 |  vP1950_RL_1))) & 
-$true) .

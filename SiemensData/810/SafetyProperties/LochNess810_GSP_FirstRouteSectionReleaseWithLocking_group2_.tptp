@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ vNUSR_TRAF_0 |  (vS6905_AM__N_0 & vS6905_AM__ALS_0))).
-
-fof(ax,conjecture, (~ vNUSR_TRAF_1 |  (vS6905_AM__N_1 & vS6905_AM__ALS_1)) & 
-$true) .
