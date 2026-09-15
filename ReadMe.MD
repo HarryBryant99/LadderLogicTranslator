@@ -3,7 +3,6 @@ Command to run the program:
 dotnet run --project SwanLLVerifier.csproj
 ```
 
-
 AbstractFirstOrderFormula safety = 
             MakeOr(
                 MakeOr(
@@ -19,6 +18,15 @@ AbstractFirstOrderFormula safety =
 
 INSTRUCTION: Read all the Readme.txt files inside every subdirectory if present.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+You will need the AIGER library to run our Ladder Logic Translator:
+
+https://github.com/arminbiere/aiger
+
+Unpack it into "LadderLogicTranslator" and follow the AIGER setup instructions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Getting the BMC results out of the old verifier (which uses z3) is a 2 step process. The second step uses fan's computer. First, generate the tptp files on the desktop (on Pragun's desk) using clausegen but the actual BMC run in z3 needs access to fan's system as other systems throw a memory error and the computation fails.
 
@@ -50,8 +58,8 @@ Toolchain
 Step 3:
 - After running the SwanLLVerifier the generated files will be in the results folder. They will be in the folder named afer the Ladder (e.g. LevelCrossing), then in a sub folder named after the Ladder_Safety Property so that if they are mutliple properties generated they are all stored separately (e.g. results/LevelCrossing/LevelCrossing_p1)
 - In each folder you will find the .aag file, the detailed aiger file, and the smt files for z3.
-- Run "combine_aag" with the .aag file as a parameter and it will build a .aig file for ABC with the numbering key built in. For ABC you need to run the "make" command and it can be found here https://github.com/berkeley-abc/abc. Place inside the main SwanLVerifier_ABC/abc.
-- Run "ic3_with_invariant" with Ladder_Safety Property will run ABC, produce the invariant and append it to the step case smt file.
+- Run "combine_aag" with the .aag file as a parameter and it will build a .aig file for ABC with the numbering key built in. For ABC you need to run the "make" command and it can be found here https://github.com/berkeley-abc/abc. Place inside the main LadderLogicTranslator/abc.
+- Run "ic3_invariant" with Ladder_Safety Property will run ABC, produce the invariant and append it to the step case smt file.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
