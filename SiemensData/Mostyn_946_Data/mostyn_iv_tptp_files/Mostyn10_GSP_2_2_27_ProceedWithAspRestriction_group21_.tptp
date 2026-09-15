@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (((~ vS6046_HGE_0 & ~ vS6046_DGE_0) & (vS6046_HGE_1 |  vS6046_DGE_1)) & vS6046_CM__U_0) |  (~ vS6046_RR_0 & ((((((~ vTPAY_AR_0 & ((~ vP1509A_C__AR_0 & (~ vP1509A_N__AR_0 & ~ vP1509A_R__AR_0)) & (~ vP1509B_C__AR_0 & (~ vP1509B_N__AR_0 & ~ vP1509B_R__AR_0)))) & ~ vTPAV_AR_0) & ((~ vP1505A_C__AR_0 & (~ vP1505A_N__AR_0 & ~ vP1505A_R__AR_0)) & (~ vP1505B_C__AR_0 & (~ vP1505B_N__AR_0 & ~ vP1505B_R__AR_0)))) & ~ vTPAT_AR_0) & ~ vTPAS_AR_0) & ~ vTPAP_AR_0)))).
-
-fof(ax,conjecture, (~ (((~ vS6046_HGE_1 & ~ vS6046_DGE_1) & (vS6046_HGE_2 |  vS6046_DGE_2)) & vS6046_CM__U_1) |  (~ vS6046_RR_1 & ((((((~ vTPAY_AR_1 & ((~ vP1509A_C__AR_1 & (~ vP1509A_N__AR_1 & ~ vP1509A_R__AR_1)) & (~ vP1509B_C__AR_1 & (~ vP1509B_N__AR_1 & ~ vP1509B_R__AR_1)))) & ~ vTPAV_AR_1) & ((~ vP1505A_C__AR_1 & (~ vP1505A_N__AR_1 & ~ vP1505A_R__AR_1)) & (~ vP1505B_C__AR_1 & (~ vP1505B_N__AR_1 & ~ vP1505B_R__AR_1)))) & ~ vTPAT_AR_1) & ~ vTPAS_AR_1) & ~ vTPAP_AR_1))) & 
-$true) .
