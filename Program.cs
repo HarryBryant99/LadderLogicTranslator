@@ -2,7 +2,9 @@
 using System.Text.Json;
 using System.Xml;
 using SwanLLVerifier.AIG;
-using SwanLLVerifier.ETCSDC_Properties;
+//using SwanLLVerifier.ETCSDC_Properties;
+using Siemens.ETCSDC;
+using Siemens.ETCSDC.Properties;
 using SwanLLVerifier.LadderLogic;
 using SwanLLVerifier.SafetyProperty;
 using SwanLLVerifier.SMTLib;

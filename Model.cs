@@ -1,5 +1,7 @@
-﻿using SwanLLVerifier.ETCSDC_Properties.Operators;
-using SwanLLVerifier.ETCSDC_Properties;
+﻿//using SwanLLVerifier.ETCSDC_Properties.Operators;
+//using SwanLLVerifier.ETCSDC_Properties;
+using Siemens.ETCSDC;
+using Siemens.ETCSDC.Properties;
 using SwanLLVerifier.LadderLogic;
 using SwanLLVerifier.AIG;
 
