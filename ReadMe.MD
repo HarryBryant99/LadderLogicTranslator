@@ -1,6 +1,6 @@
 Command to run the program:
 ```bash
-dotnet run --project SwanLLVerifier.csproj
+dotnet run --project LadderLogicTranslator.csproj
 ```
 
 AbstractFirstOrderFormula safety = 
@@ -56,12 +56,9 @@ Toolchain
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Step 3:
-- After running the SwanLLVerifier the generated files will be in the results folder. They will be in the folder named afer the Ladder (e.g. LevelCrossing), then in a sub folder named after the Ladder_Safety Property so that if they are mutliple properties generated they are all stored separately (e.g. results/LevelCrossing/LevelCrossing_p1)
+- After running the LadderLogicTranslator the generated files will be in the results folder. They will be in the folder named afer the Ladder (e.g. LevelCrossing), then in a sub folder named after the Ladder_Safety Property so that if they are mutliple properties generated they are all stored separately (e.g. results/LevelCrossing/LevelCrossing_p1)
 - In each folder you will find the .aag file, the detailed aiger file, and the smt files for z3.
 - Run "combine_aag" with the .aag file as a parameter and it will build a .aig file for ABC with the numbering key built in. For ABC you need to run the "make" command and it can be found here https://github.com/berkeley-abc/abc. Place inside the main LadderLogicTranslator/abc.
 - Run "ic3_invariant" with Ladder_Safety Property will run ABC, produce the invariant and append it to the step case smt file.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Admin Password for LLV-Verifier/LLV : Roggenb@ch
-James is the second user and has his separate credentials.
