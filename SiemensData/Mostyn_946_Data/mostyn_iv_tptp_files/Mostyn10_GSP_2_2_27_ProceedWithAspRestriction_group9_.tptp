@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ ((~ vS6038_DGE_0 & vS6038_DGE_1) & vS6038_BM__U_0) |  (~ vS6038_RR_0 & ((((((~ vP1506A_C__AR_0 & (~ vP1506A_N__AR_0 & ~ vP1506A_R__AR_0)) & (~ vP1506B_C__AR_0 & (~ vP1506B_N__AR_0 & ~ vP1506B_R__AR_0))) & ((~ vP1505A_C__AR_0 & (~ vP1505A_N__AR_0 & ~ vP1505A_R__AR_0)) & (~ vP1505B_C__AR_0 & (~ vP1505B_N__AR_0 & ~ vP1505B_R__AR_0)))) & ~ vTPAT_AR_0) & ~ vTPAS_AR_0) & ~ vTPAP_AR_0)))).
-
-fof(ax,conjecture, (~ ((~ vS6038_DGE_1 & vS6038_DGE_2) & vS6038_BM__U_1) |  (~ vS6038_RR_1 & ((((((~ vP1506A_C__AR_1 & (~ vP1506A_N__AR_1 & ~ vP1506A_R__AR_1)) & (~ vP1506B_C__AR_1 & (~ vP1506B_N__AR_1 & ~ vP1506B_R__AR_1))) & ((~ vP1505A_C__AR_1 & (~ vP1505A_N__AR_1 & ~ vP1505A_R__AR_1)) & (~ vP1505B_C__AR_1 & (~ vP1505B_N__AR_1 & ~ vP1505B_R__AR_1)))) & ~ vTPAT_AR_1) & ~ vTPAS_AR_1) & ~ vTPAP_AR_1))) & 
-$true) .
