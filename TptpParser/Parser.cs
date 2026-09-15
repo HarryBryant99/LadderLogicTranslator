@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using static SwanLLVerifier.PropositionalLogic.PropositionalFormulaBuilder;
-using SwanLLVerifier.ETCSDC_Properties;
+//using SwanLLVerifier.ETCSDC_Properties;
+using Siemens.ETCSDC;
+using Siemens.ETCSDC.Properties;
 using SwanLLVerifier.AIG;
 
 

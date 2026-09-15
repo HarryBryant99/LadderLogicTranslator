@@ -22,8 +22,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
-using Siemens.ETCSDC.PropertyVisitor;
+//using Newtonsoft.Json;
+//using Siemens.ETCSDC.PropertyVisitor;
 
 namespace Siemens.ETCSDC.Properties
 {
@@ -44,9 +44,11 @@ namespace Siemens.ETCSDC.Properties
         /// Method to accept a property visitor.
         /// </summary>
         /// <param name="visitor">The visitor being accepted</param>
+        /*
         public override Object Accept(IPropertyVisitor visitor)
         {
             return visitor.Visit(this);
         }
+        */
     }//end And
 }//end namespace PropertySchema

@@ -18,10 +18,10 @@
 //
 
 
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Siemens.ETCSDC.PropertyVisitor;
-using Siemens.ETCSModularDataParser.Logging;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Converters;
+//using Siemens.ETCSDC.PropertyVisitor;
+//using Siemens.ETCSModularDataParser.Logging;
 using System;
 using System.Runtime.Serialization;
 
@@ -37,7 +37,7 @@ namespace Siemens.ETCSDC.Properties
 		/// <summary>
 		/// Enum capturing the type of the first order formula
 		/// </summary>
-		[JsonConverter(typeof(StringEnumConverter))]
+		//[JsonConverter(typeof(StringEnumConverter))]
 		public enum FOLFormulaType
 		{
 			/// <remarks/>
@@ -99,7 +99,7 @@ namespace Siemens.ETCSDC.Properties
 		/// Method to accept a property visitor.
 		/// </summary>
 		/// <param name="visitor">The visitor being accepted</param>
-		public abstract Object Accept(IPropertyVisitor visitor);
+		//public abstract Object Accept(IPropertyVisitor visitor);
 
 
 
@@ -107,10 +107,10 @@ namespace Siemens.ETCSDC.Properties
 		/// Returns the JSON string presentation of the object
 		/// </summary>
 		/// <returns>JSON string presentation of the object</returns>
-		public virtual string ToJson()
-		{
-			return JsonConvert.SerializeObject(this, Formatting.Indented);
-		}
+		//public virtual string ToJson()
+		//{
+		//	return JsonConvert.SerializeObject(this, Formatting.Indented);
+		//}
 
 		/// <summary>
 		/// Returns true if AbstractFirstOrderFormula instances are equal
@@ -119,7 +119,7 @@ namespace Siemens.ETCSDC.Properties
 		/// <returns>Boolean</returns>
 		public virtual bool Equals(AbstractFirstOrderFormula input)
 		{
-			Log.Information("AbstractFirstOrderFormula equality called", string.Empty, LogClient.Checker);
+			//Log.Information("AbstractFirstOrderFormula equality called", string.Empty, LogClient.Checker);
 			if (input == null)
 				return false;
 
@@ -129,6 +129,66 @@ namespace Siemens.ETCSDC.Properties
 					this.FormulaType.Equals(input.FormulaType)
 				) ;
 		}
+
+		/// Added back for SMTLIB Printing
+
+		/// <summary>
+        /// Retrieves all variables present in the formula via recursive traversal.
+        /// For Predicate types, extracts predicate names as variables.
+        /// For operators, recursively collects variables from operands.
+        /// </summary>
+        /// <returns>A HashSet of unique variable names (predicate names)</returns>
+        public HashSet<string> GetAllVariables()
+        {
+            var variables = new HashSet<string>();
+
+            switch (this.FormulaType)
+            {
+                case FOLFormulaType.Predicate:
+                    // For Predicate nodes, the Name property represents the variable
+                    if (this is Predicate predicate && !string.IsNullOrEmpty(predicate.Name))
+                    {
+                        variables.Add(predicate.Name);
+                    }
+                    break;
+
+                case FOLFormulaType.Negation:
+                case FOLFormulaType.Brackets:
+                    // Unary operators: recursively collect from their single operand
+                    if (this is UnaryOperatorType unaryOp && unaryOp.Operand != null)
+                    {
+                        var operandVariables = unaryOp.Operand.GetAllVariables();
+                        foreach (var variable in operandVariables)
+                        {
+                            variables.Add(variable);
+                        }
+                    }
+                    break;
+
+                case FOLFormulaType.And:
+                case FOLFormulaType.Or:
+                case FOLFormulaType.Implies:
+                case FOLFormulaType.Equivalent:
+                    // Binary operators: recursively collect from both operands
+                    if (this is BinaryOperatorType binaryOp && binaryOp.Operands != null)
+                    {
+                        foreach (var operand in binaryOp.Operands)
+                        {
+                            if (operand != null)
+                            {
+                                var operandVariables = operand.GetAllVariables();
+                                foreach (var variable in operandVariables)
+                                {
+                                    variables.Add(variable);
+                                }
+                            }
+                        }
+                    }
+                    break;
+            }
+
+            return variables;
+        }
 
 
 	}//end AbstractFirstOrderFormula

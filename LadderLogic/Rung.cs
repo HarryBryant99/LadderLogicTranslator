@@ -1,5 +1,7 @@
 ﻿using SwanLLVerifier.PropositionalLogic;
-using SwanLLVerifier.ETCSDC_Properties;
+//using SwanLLVerifier.ETCSDC_Properties;
+using Siemens.ETCSDC;
+using Siemens.ETCSDC.Properties;
 
 namespace SwanLLVerifier.LadderLogic
 {

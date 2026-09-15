@@ -1,4 +1,6 @@
-﻿using SwanLLVerifier.ETCSDC_Properties;
+﻿//using SwanLLVerifier.ETCSDC_Properties;
+using Siemens.ETCSDC;
+using Siemens.ETCSDC.Properties;
 using System.Xml;
 using static SwanLLVerifier.PropositionalLogic.PropositionalFormulaBuilder;
 

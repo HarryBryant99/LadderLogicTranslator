@@ -23,10 +23,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Siemens.ETCSDC.PropertyVisitor;
-using Siemens.ETCSModularDataParser.Logging;
+//using Newtonsoft.Json;
+//using Newtonsoft.Json.Converters;
+//using Siemens.ETCSDC.PropertyVisitor;
+//using Siemens.ETCSModularDataParser.Logging;
 
 namespace Siemens.ETCSDC.Properties
 {
@@ -35,7 +35,7 @@ namespace Siemens.ETCSDC.Properties
     /// </summary>
     [DataContract]
     [System.Xml.Serialization.XmlType(Namespace = Constants.NAMESPACE, IncludeInSchema = false)]
-    [JsonConverter(typeof(StringEnumConverter))]
+    //[JsonConverter(typeof(StringEnumConverter))]
     public enum TermType
     {
         /// <remarks/>
@@ -68,8 +68,8 @@ namespace Siemens.ETCSDC.Properties
         /// </summary>
         [System.Xml.Serialization.XmlElement("Var", typeof(string), Namespace = Constants.NAMESPACE)]
         [System.Xml.Serialization.XmlElement("NamedConstant", typeof(string), Namespace = Constants.NAMESPACE)]
-        [System.Xml.Serialization.XmlElement("LiteralConstant", typeof(LiteralConstant), Namespace = Constants.NAMESPACE)]
-        [System.Xml.Serialization.XmlElement("Function", typeof(Siemens.ETCSDC.Properties.Function))]
+        //[System.Xml.Serialization.XmlElement("LiteralConstant", typeof(LiteralConstant), Namespace = Constants.NAMESPACE)]
+        //[System.Xml.Serialization.XmlElement("Function", typeof(Siemens.ETCSDC.Properties.Function))]
         [System.Xml.Serialization.XmlChoiceIdentifier("TypeValue")]
         [DataMember(Name = "value")]
         public object Value
@@ -99,20 +99,20 @@ namespace Siemens.ETCSDC.Properties
         /// Method to accept a property visitor.
         /// </summary>
         /// <param name="visitor">The visitor being accepted</param>
-        public Object Accept(IPropertyVisitor visitor)
-        {
-            return visitor.Visit(this);
-        }
+        //public Object Accept(IPropertyVisitor visitor)
+        //{
+        //    return visitor.Visit(this);
+        //}
 
 
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public string ToJson()
-        {
-            return JsonConvert.SerializeObject(this, Formatting.Indented);
-        }
+        //public string ToJson()
+        //{
+        //    return JsonConvert.SerializeObject(this, Formatting.Indented);
+        //}
 
         /// <summary>
         /// Returns true if Term instances are equal
@@ -122,7 +122,7 @@ namespace Siemens.ETCSDC.Properties
         public bool Equals(Term input)
         {
             bool result = true;
-            Log.Information("Term equality called", string.Empty, LogClient.Checker);
+            //Log.Information("Term equality called", string.Empty, LogClient.Checker);
             if (input == null)
                 result = false;
 
@@ -130,10 +130,10 @@ namespace Siemens.ETCSDC.Properties
                 result = false;
 
             if (result && (this.TypeValue == TermType.Function))
-                result = ((Function)this.Value).Equals((Function)input.Value);
+                //result = ((Function)this.Value).Equals((Function)input.Value);
 
             if (result && (this.TypeValue == TermType.LiteralConstant))
-                result = ((LiteralConstant)this.Value).Equals((LiteralConstant)input.Value);
+                //result = ((LiteralConstant)this.Value).Equals((LiteralConstant)input.Value);
 
             if (result && (this.TypeValue == TermType.NamedConstant || this.TypeValue == TermType.Var))
                 result = ((string)this.Value) == ((string)input.Value);

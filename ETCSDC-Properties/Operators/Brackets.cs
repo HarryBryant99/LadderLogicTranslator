@@ -22,8 +22,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
-using Siemens.ETCSDC.PropertyVisitor;
+//using Newtonsoft.Json;
+//using Siemens.ETCSDC.PropertyVisitor;
 
 namespace Siemens.ETCSDC.Properties
 {
@@ -39,6 +39,8 @@ namespace Siemens.ETCSDC.Properties
 		public Brackets()
 		{
 		}
+
+/*
 
 		/// <summary>
 		/// Method to accept a property visitor.
@@ -57,6 +59,7 @@ namespace Siemens.ETCSDC.Properties
 		{
 			return JsonConvert.SerializeObject(this, Formatting.Indented);
 		}
+*/
 
 	}//end Brackets
 

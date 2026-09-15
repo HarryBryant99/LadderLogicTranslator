@@ -1,0 +1,10 @@
+digraph "/mnt/c/Users/Micheal/Documents/GitHub/SwanLLVerifier/results/Examples/ex2-q.aag" {
+"4"->"2"[arrowhead=none];
+"4"->"2"[arrowhead=none];
+B0[shape=triangle,color=red];
+B0 -> "2"[arrowhead=dot];
+"2"[shape=box,color=magenta];
+L0 [shape=diamond,color=magenta];
+L0 -> "4"[arrowhead=dot];
+L0 -> "2"[style=dashed,color=magenta,arrowhead=none];
+}

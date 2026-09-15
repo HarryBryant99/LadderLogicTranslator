@@ -3,7 +3,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using SwanLLVerifier.AIG;
-using SwanLLVerifier.ETCSDC_Properties.Operators;
+//using SwanLLVerifier.ETCSDC_Properties.Operators;
+using Siemens.ETCSDC;
+using Siemens.ETCSDC.Properties;
 using SwanLLVerifier.LadderLogic;
 using SwanLLVerifier.Utils;
 

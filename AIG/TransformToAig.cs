@@ -1,8 +1,8 @@
-﻿using SwanLLVerifier.ETCSDC_Properties;
-using SwanLLVerifier.ETCSDC_Properties.Operators;
+﻿using Siemens.ETCSDC;
+using Siemens.ETCSDC.Properties;
 using static SwanLLVerifier.PropositionalLogic.PropositionalFormulaBuilder;
 using static SwanLLVerifier.Utils.OperandsDuplication;
-using SwanLLVerifier.ETCSDC_Properties.OperatorTypes;
+//using SwanLLVerifier.ETCSDC_Properties.OperatorTypes;
 using SwanLLVerifier.LadderLogic;
 using SwanLLVerifier.Utils;
 

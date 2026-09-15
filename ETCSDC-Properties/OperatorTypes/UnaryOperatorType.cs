@@ -23,8 +23,8 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Runtime.Serialization;
-using Newtonsoft.Json;
-using Siemens.ETCSModularDataParser.Logging;
+//using Newtonsoft.Json;
+//using Siemens.ETCSModularDataParser.Logging;
 
 namespace Siemens.ETCSDC.Properties
 {
@@ -34,8 +34,8 @@ namespace Siemens.ETCSDC.Properties
     [DataContract]
     public abstract class UnaryOperatorType : AbstractFirstOrderFormula
     {
-        [System.Xml.Serialization.XmlElement("Forall", typeof(Forall), Namespace = Constants.NAMESPACE)]
-        [System.Xml.Serialization.XmlElement("Exists", typeof(Exists), Namespace = Constants.NAMESPACE)]
+        //[System.Xml.Serialization.XmlElement("Forall", typeof(Forall), Namespace = Constants.NAMESPACE)]
+        //[System.Xml.Serialization.XmlElement("Exists", typeof(Exists), Namespace = Constants.NAMESPACE)]
         [System.Xml.Serialization.XmlElement("Negation", typeof(Negation), Namespace = Constants.NAMESPACE)]
         [System.Xml.Serialization.XmlElement("And", typeof(And), Namespace = Constants.NAMESPACE)]
         [System.Xml.Serialization.XmlElement("Or", typeof(Or), Namespace = Constants.NAMESPACE)]
@@ -43,7 +43,7 @@ namespace Siemens.ETCSDC.Properties
         [System.Xml.Serialization.XmlElement("Predicate", typeof(Predicate), Namespace = Constants.NAMESPACE)]
         [System.Xml.Serialization.XmlElement("Equivalent", typeof(Equivalent), Namespace = Constants.NAMESPACE)]
         [System.Xml.Serialization.XmlElement("Brackets", typeof(Brackets), Namespace = Constants.NAMESPACE)]
-        [System.Xml.Serialization.XmlElement("Equality", typeof(Equality), Namespace = Constants.NAMESPACE)]
+        //[System.Xml.Serialization.XmlElement("Equality", typeof(Equality), Namespace = Constants.NAMESPACE)]
         [System.Xml.Serialization.XmlChoiceIdentifier("OperandType")]
 
         /// <summary>
@@ -72,10 +72,10 @@ namespace Siemens.ETCSDC.Properties
         /// Returns the JSON string presentation of the object
         /// </summary>
         /// <returns>JSON string presentation of the object</returns>
-        public override string ToJson()
-        {
-            return JsonConvert.SerializeObject(this, Formatting.Indented);
-        }
+        //public override string ToJson()
+        //{
+        //    return JsonConvert.SerializeObject(this, Formatting.Indented);
+        //}
 
         /// <summary>
         /// Returns true if UnaryOperatorType formula instances are equal
@@ -84,7 +84,7 @@ namespace Siemens.ETCSDC.Properties
         /// <returns>Boolean</returns>
         public override bool Equals(AbstractFirstOrderFormula input)
         {
-            Log.Information("UnaryOperatorType AbstractFirstOrderFormula  equality called", string.Empty, LogClient.Checker);
+            //Log.Information("UnaryOperatorType AbstractFirstOrderFormula  equality called", string.Empty, LogClient.Checker);
             if (input == null)
                 return false;
 
