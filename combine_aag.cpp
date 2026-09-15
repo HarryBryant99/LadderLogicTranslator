@@ -1,3 +1,15 @@
+/* 
+Written by the Swansea Centre for Research in Digital Railways
+
+Version 1.0.0
+
+15/09/2026
+
+Licence: GNU General Public License v3.0
+
+*/
+
+
 //Processing the Aiger file to .aig with names
 
 #include <cstdio>
