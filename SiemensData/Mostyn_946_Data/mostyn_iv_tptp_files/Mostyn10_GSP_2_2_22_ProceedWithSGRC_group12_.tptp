@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (~ vS6066_DGE_0 & vS6066_DGE_1) |  ~ vTYM_SGRC_0)).
-
-fof(ax,conjecture, (~ (~ vS6066_DGE_1 & vS6066_DGE_2) |  ~ vTYM_SGRC_1) & 
-$true) .

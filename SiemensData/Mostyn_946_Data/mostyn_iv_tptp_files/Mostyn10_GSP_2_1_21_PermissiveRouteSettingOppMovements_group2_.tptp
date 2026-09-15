@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (~ vS6044_AC__U_0 & vS6044_AC__U_1) |  (vNUSROL__N_P1507_1 & (vNUSROL_TPYV_1 & ((vNUSR__N_P1507_1 & ((vNUSR__N_P1509A_1 & vNUSR__N_P1509B_1) & (vNUSR__R_P1508A_1 & vNUSR__R_P1508B_1))) & vNUSR_TPYZ_1))))).
-
-fof(ax,conjecture, (~ (~ vS6044_AC__U_1 & vS6044_AC__U_2) |  (vNUSROL__N_P1507_2 & (vNUSROL_TPYV_2 & ((vNUSR__N_P1507_2 & ((vNUSR__N_P1509A_2 & vNUSR__N_P1509B_2) & (vNUSR__R_P1508A_2 & vNUSR__R_P1508B_2))) & vNUSR_TPYZ_2)))) & 
-$true) .

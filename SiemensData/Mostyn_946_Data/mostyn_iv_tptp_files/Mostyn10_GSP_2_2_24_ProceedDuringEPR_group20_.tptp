@@ -1,4 +1,0 @@
-fof(ax,axiom, (~ (((~ vS6046_HGE_0 & ~ vS6046_DGE_0) & (vS6046_HGE_1 |  vS6046_DGE_1)) & vS6046_BM__U_0) |  ((((~ vTPAY_EPR_0 & ~ vTPAX_EPR_0) & ~ vTPZA_EPR_0) & ~ vTPZB_EPR_0) & ~ vTPZC_EPR_0))).
-
-fof(ax,conjecture, (~ (((~ vS6046_HGE_1 & ~ vS6046_DGE_1) & (vS6046_HGE_2 |  vS6046_DGE_2)) & vS6046_BM__U_1) |  ((((~ vTPAY_EPR_1 & ~ vTPAX_EPR_1) & ~ vTPZA_EPR_1) & ~ vTPZB_EPR_1) & ~ vTPZC_EPR_1)) & 
-$true) .
