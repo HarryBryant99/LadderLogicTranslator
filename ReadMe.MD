@@ -20,7 +20,7 @@ Getting the BMC results out of the old verifier (which uses z3) is a 2 step proc
 
 Step 1: 
 - Generate the BMC tptp files using the function GenerateTptpFiles() from the IC3 codebase.
-- Make sure you tweak the filepaths and create directories beforehand.
+- Make sure you edit the filepaths and create directories beforehand.
 
 Step 2: 
 - IMPORTANT: Copy Ladder.tptp from the clausegen run into the output directory in the same level as of the safety files.
