@@ -1,0 +1,3 @@
+fof(ax,axiom, ~vA_1).
+include('program-liveness-example.tptp').
+fof(ax,conjecture, (vreqB_1) =>( (vB_1) | (vB_2)) ).

@@ -1,0 +1,4 @@
+fof(ax,axiom, vA_1 <=> (~vA_0 | vA_0)).
+fof(ax,axiom, vB_1 <=> vA_0).
+fof(ax,axiom, vC_1 <=> vB_0).
+fof(ax,axiom, vD_1 <=> vC_0).

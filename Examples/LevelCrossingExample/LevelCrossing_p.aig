@@ -1,0 +1,14 @@
+aig 14 2 5 0 7 1
+11
+18
+22
+24
+26
+28
+	i0 TrainApproach
+i1 TrainPassed
+l0 CarsCrossing
+l1 LightsFlash
+l2 BarriersDown
+l3 WhiteLight
+l4 TrainCrossing

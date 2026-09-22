@@ -1,0 +1,3 @@
+include('simpleParadise.tptp').
+include('program-liveness-example.tptp').
+fof(ax,conjecture, (vreqB_0) => ((vB_0) | (vB_1))).

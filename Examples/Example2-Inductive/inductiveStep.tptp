@@ -1,0 +1,3 @@
+fof(ax,axiom,  (vX_0) ).
+include('transition.tptp').
+fof(ax,conjecture,  (vX_1) ).

@@ -1,0 +1,5 @@
+fof(ax,axiom, vCarsCrossing_1 <=> (~vBarriersDown_0)).
+fof(ax,axiom, vLightsFlash_1 <=> ((vTrainApproach_0 | vLightsFlash_0) & ~vTrainPassed_0)).
+fof(ax,axiom, vBarriersDown_1 <=> ((vLightsFlash_0 | vBarriersDown_0) & ~vTrainPassed_0)).
+fof(ax,axiom, vWhiteLight_1 <=> (vBarriersDown_0 & ~vTrainPassed_0)).
+fof(ax,axiom, vTrainCrossing_1 <=> (vWhiteLight_0 & ~vTrainPassed_0)).

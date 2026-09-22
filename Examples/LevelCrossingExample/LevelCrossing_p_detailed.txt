@@ -1,0 +1,77 @@
+Detailed AIGER File Information:aag 14 2 5 0 7 1
+INPUT TrainApproach with value: 2
+INPUT TrainPassed with value: 4
+Total number of inputs: 2
+LATCH CarsCrossing => 6 with value: 11 and initial value: 0
+LATCH LightsFlash => 8 with value: 18 and initial value: 0
+LATCH BarriersDown => 10 with value: 22 and initial value: 0
+LATCH WhiteLight => 12 with value: 24 and initial value: 0
+LATCH TrainCrossing => 14 with value: 26 and initial value: 0
+Output (safety property): 28
+AND gate: 16 3 9 
+AND gate: 18 17 5 
+AND gate: 20 9 11 
+AND gate: 22 21 5 
+AND gate: 24 10 5 
+AND gate: 26 12 5 
+AND gate: 28 6 14 
+
+=== Decorated Var Names ===
+Key = TrainApproach, Value = 2
+Key = TrainPassed, Value = 4
+Key = CarsCrossing, Value = 6
+Key = LightsFlash, Value = 8
+Key = BarriersDown, Value = 10
+Key = WhiteLight, Value = 12
+Key = TrainCrossing, Value = 14
+
+=== Decorated Var Names Next Cycle ===
+Key = TrainApproach_1, Value = 2
+Key = TrainPassed_1, Value = 4
+Key = CarsCrossing_1, Value = 6
+Key = LightsFlash_1, Value = 8
+Key = BarriersDown_1, Value = 10
+Key = WhiteLight_1, Value = 12
+Key = TrainCrossing_1, Value = 14
+
+=== Decorated Latch Variables ===
+Key = CarsCrossing_LATCH, Value = 11
+Key = LightsFlash_LATCH, Value = 18
+Key = BarriersDown_LATCH, Value = 22
+Key = WhiteLight_LATCH, Value = 24
+Key = TrainCrossing_LATCH, Value = 26
+
+=== Decorated Trees ===
+Key = CarsCrossing_LATCH_NEG_11, Value = 11
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Predicate (BarriersDown), Value = 11
+Key = LightsFlash_LATCH_NEG_3, Value = 3
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Predicate (TrainApproach), Value = 3
+Key = LightsFlash_LATCH_NEG_9, Value = 9
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Predicate (LightsFlash), Value = 9
+Key = LightsFlash_LATCH_AND_16_3_9, Value = 16
+Key = LightsFlash_LATCH_NEG_17, Value = 17
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Brackets (), Value = 17
+Key = LightsFlash_LATCH_NEG_5, Value = 5
+Key = NEGATION_OF_SwanLLVerifier.ETCSDC_Properties.Operators.Predicate (TrainPassed), Value = 5
+Key = LightsFlash_LATCH_AND_18_17_5, Value = 18
+Key = BarriersDown_LATCH_NEG_9, Value = 9
+Key = BarriersDown_LATCH_NEG_11, Value = 11
+Key = BarriersDown_LATCH_AND_20_9_11, Value = 20
+Key = BarriersDown_LATCH_NEG_21, Value = 21
+Key = BarriersDown_LATCH_NEG_5, Value = 5
+Key = BarriersDown_LATCH_AND_22_21_5, Value = 22
+Key = WhiteLight_LATCH_NEG_5, Value = 5
+Key = WhiteLight_LATCH_AND_24_10_5, Value = 24
+Key = TrainCrossing_LATCH_NEG_5, Value = 5
+Key = TrainCrossing_LATCH_AND_26_12_5, Value = 26
+Key = SAFETY, Value = 6
+Key = SAFETY_AND_28_6_14, Value = 28
+Key = SAFETY_NEG_29, Value = 29
+Key = SAFETY_NEG_28, Value = 28
+
+=== Latch Names And Values ===
+Key = CarsCrossing_LATCH, Value = True
+Key = LightsFlash_LATCH, Value = False
+Key = BarriersDown_LATCH, Value = False
+Key = WhiteLight_LATCH, Value = False
+Key = TrainCrossing_LATCH, Value = False

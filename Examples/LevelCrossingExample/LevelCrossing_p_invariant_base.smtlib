@@ -1,0 +1,1 @@
+(assert (not (or (and (not vBarriersDown_0) vWhiteLight_0) (and vCarsCrossing_0 vTrainCrossing_0))))

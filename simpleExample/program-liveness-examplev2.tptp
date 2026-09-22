@@ -1,0 +1,2 @@
+fof(ax,axiom, vA_1 <=> (  ~(vreqA_0  &  ~vB_0) )).
+fof(ax,axiom, vB_1 <=> (vreqB_0  &  ~vA_1) ).

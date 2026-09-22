@@ -1,0 +1,1 @@
+fof(ax,axiom, vX_1 <=>  ((vX_0  |  ~vX_0) & ~(vX_0  &  ~vX_0)) ).
