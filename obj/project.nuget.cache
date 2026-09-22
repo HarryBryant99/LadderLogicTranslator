@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+15tm9rYEiY=",
+  "dgSpecHash": "Z+2Yx9LkA6w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\harry\\Documents\\University\\Markus\\SwanLLVerifier_ABC\\LadderLogicTranslator.csproj",
+  "projectFilePath": "C:\\Users\\harry\\Documents\\University\\Markus\\LadderLogicTranslator\\LadderLogicTranslator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\harry\\.nuget\\packages\\mstest.testframework\\3.1.1\\mstest.testframework.3.1.1.nupkg.sha512",
     "C:\\Users\\harry\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.28\\microsoft.netcore.app.ref.8.0.28.nupkg.sha512",

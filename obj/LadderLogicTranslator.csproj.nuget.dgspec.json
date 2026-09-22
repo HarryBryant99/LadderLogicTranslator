@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\harry\\Documents\\University\\Markus\\SwanLLVerifier_ABC\\LadderLogicTranslator.csproj": {}
+    "C:\\Users\\harry\\Documents\\University\\Markus\\LadderLogicTranslator\\LadderLogicTranslator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\harry\\Documents\\University\\Markus\\SwanLLVerifier_ABC\\LadderLogicTranslator.csproj": {
+    "C:\\Users\\harry\\Documents\\University\\Markus\\LadderLogicTranslator\\LadderLogicTranslator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\harry\\Documents\\University\\Markus\\SwanLLVerifier_ABC\\LadderLogicTranslator.csproj",
+        "projectUniqueName": "C:\\Users\\harry\\Documents\\University\\Markus\\LadderLogicTranslator\\LadderLogicTranslator.csproj",
         "projectName": "LadderLogicTranslator",
-        "projectPath": "C:\\Users\\harry\\Documents\\University\\Markus\\SwanLLVerifier_ABC\\LadderLogicTranslator.csproj",
+        "projectPath": "C:\\Users\\harry\\Documents\\University\\Markus\\LadderLogicTranslator\\LadderLogicTranslator.csproj",
         "packagesPath": "C:\\Users\\harry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\harry\\Documents\\University\\Markus\\SwanLLVerifier_ABC\\obj\\",
+        "outputPath": "C:\\Users\\harry\\Documents\\University\\Markus\\LadderLogicTranslator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\harry\\AppData\\Roaming\\NuGet\\NuGet.Config"
