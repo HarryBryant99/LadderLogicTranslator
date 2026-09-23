@@ -1,0 +1,18 @@
+aig 16 2 7 0 7 1
+2
+4
+15
+22
+26
+28
+30
+32
+	i0 TrainApproachSensor
+i1 TrainPassedSensor
+l0 TrainApproach
+l1 TrainPassed
+l2 CarsCrossing
+l3 LightsFlash
+l4 BarriersDown
+l5 WhiteLight
+l6 TrainCrossing

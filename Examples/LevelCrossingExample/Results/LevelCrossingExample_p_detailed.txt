@@ -1,0 +1,87 @@
+Detailed AIGER File Information:aag 16 2 7 0 7 1
+INPUT TrainApproachSensor with value: 2
+INPUT TrainPassedSensor with value: 4
+Total number of inputs: 2
+LATCH TrainApproach => 6 with value: 2 and initial value: 0
+LATCH TrainPassed => 8 with value: 4 and initial value: 0
+LATCH CarsCrossing => 10 with value: 15 and initial value: 0
+LATCH LightsFlash => 12 with value: 22 and initial value: 0
+LATCH BarriersDown => 14 with value: 26 and initial value: 0
+LATCH WhiteLight => 16 with value: 28 and initial value: 0
+LATCH TrainCrossing => 18 with value: 30 and initial value: 0
+Output (safety property): 32
+AND gate: 20 7 13 
+AND gate: 22 21 9 
+AND gate: 24 13 15 
+AND gate: 26 25 9 
+AND gate: 28 14 9 
+AND gate: 30 16 9 
+AND gate: 32 10 18 
+
+=== Decorated Var Names ===
+Key = TrainApproachSensor, Value = 2
+Key = TrainPassedSensor, Value = 4
+Key = TrainApproach, Value = 6
+Key = TrainPassed, Value = 8
+Key = CarsCrossing, Value = 10
+Key = LightsFlash, Value = 12
+Key = BarriersDown, Value = 14
+Key = WhiteLight, Value = 16
+Key = TrainCrossing, Value = 18
+
+=== Decorated Var Names Next Cycle ===
+Key = TrainApproachSensor_1, Value = 2
+Key = TrainPassedSensor_1, Value = 4
+Key = TrainApproach_1, Value = 6
+Key = TrainPassed_1, Value = 8
+Key = CarsCrossing_1, Value = 10
+Key = LightsFlash_1, Value = 12
+Key = BarriersDown_1, Value = 14
+Key = WhiteLight_1, Value = 16
+Key = TrainCrossing_1, Value = 18
+
+=== Decorated Latch Variables ===
+Key = TrainApproach_LATCH, Value = 2
+Key = TrainPassed_LATCH, Value = 4
+Key = CarsCrossing_LATCH, Value = 15
+Key = LightsFlash_LATCH, Value = 22
+Key = BarriersDown_LATCH, Value = 26
+Key = WhiteLight_LATCH, Value = 28
+Key = TrainCrossing_LATCH, Value = 30
+
+=== Decorated Trees ===
+Key = CarsCrossing_LATCH_NEG_15, Value = 15
+Key = NEGATION_OF_Siemens.ETCSDC.Properties.Predicate (BarriersDown), Value = 15
+Key = LightsFlash_LATCH_NEG_7, Value = 7
+Key = NEGATION_OF_Siemens.ETCSDC.Properties.Predicate (TrainApproach), Value = 7
+Key = LightsFlash_LATCH_NEG_13, Value = 13
+Key = NEGATION_OF_Siemens.ETCSDC.Properties.Predicate (LightsFlash), Value = 13
+Key = LightsFlash_LATCH_AND_20_7_13, Value = 20
+Key = LightsFlash_LATCH_NEG_21, Value = 21
+Key = NEGATION_OF_Siemens.ETCSDC.Properties.Brackets (), Value = 21
+Key = LightsFlash_LATCH_NEG_9, Value = 9
+Key = NEGATION_OF_Siemens.ETCSDC.Properties.Predicate (TrainPassed), Value = 9
+Key = LightsFlash_LATCH_AND_22_21_9, Value = 22
+Key = BarriersDown_LATCH_NEG_13, Value = 13
+Key = BarriersDown_LATCH_NEG_15, Value = 15
+Key = BarriersDown_LATCH_AND_24_13_15, Value = 24
+Key = BarriersDown_LATCH_NEG_25, Value = 25
+Key = BarriersDown_LATCH_NEG_9, Value = 9
+Key = BarriersDown_LATCH_AND_26_25_9, Value = 26
+Key = WhiteLight_LATCH_NEG_9, Value = 9
+Key = WhiteLight_LATCH_AND_28_14_9, Value = 28
+Key = TrainCrossing_LATCH_NEG_9, Value = 9
+Key = TrainCrossing_LATCH_AND_30_16_9, Value = 30
+Key = SAFETY, Value = 10
+Key = SAFETY_AND_32_10_18, Value = 32
+Key = SAFETY_NEG_33, Value = 33
+Key = SAFETY_NEG_32, Value = 32
+
+=== Latch Names And Values ===
+Key = TrainApproach_LATCH, Value = False
+Key = TrainPassed_LATCH, Value = False
+Key = CarsCrossing_LATCH, Value = True
+Key = LightsFlash_LATCH, Value = False
+Key = BarriersDown_LATCH, Value = False
+Key = WhiteLight_LATCH, Value = False
+Key = TrainCrossing_LATCH, Value = False
