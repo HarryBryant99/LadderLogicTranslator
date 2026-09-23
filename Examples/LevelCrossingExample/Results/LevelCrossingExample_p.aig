@@ -7,8 +7,8 @@ aig 16 2 7 0 7 1
 28
 30
 32
-	i0 TrainApproachSensor
-i1 TrainPassedSensor
+	i0 ApproachSensor
+i1 PassedSensor
 l0 TrainApproach
 l1 TrainPassed
 l2 CarsCrossing

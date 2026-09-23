@@ -1,6 +1,6 @@
 Detailed AIGER File Information:aag 16 2 7 0 7 1
-INPUT TrainApproachSensor with value: 2
-INPUT TrainPassedSensor with value: 4
+INPUT ApproachSensor with value: 2
+INPUT PassedSensor with value: 4
 Total number of inputs: 2
 LATCH TrainApproach => 6 with value: 2 and initial value: 0
 LATCH TrainPassed => 8 with value: 4 and initial value: 0
@@ -19,8 +19,8 @@ AND gate: 30 16 9
 AND gate: 32 10 18 
 
 === Decorated Var Names ===
-Key = TrainApproachSensor, Value = 2
-Key = TrainPassedSensor, Value = 4
+Key = ApproachSensor, Value = 2
+Key = PassedSensor, Value = 4
 Key = TrainApproach, Value = 6
 Key = TrainPassed, Value = 8
 Key = CarsCrossing, Value = 10
@@ -30,8 +30,8 @@ Key = WhiteLight, Value = 16
 Key = TrainCrossing, Value = 18
 
 === Decorated Var Names Next Cycle ===
-Key = TrainApproachSensor_1, Value = 2
-Key = TrainPassedSensor_1, Value = 4
+Key = ApproachSensor_1, Value = 2
+Key = PassedSensor_1, Value = 4
 Key = TrainApproach_1, Value = 6
 Key = TrainPassed_1, Value = 8
 Key = CarsCrossing_1, Value = 10
