@@ -51,13 +51,13 @@ namespace SwanLLVerifier.Utils
 
             string TptpPath = Path.Combine(
                 sourceRootPath,
-                "CounterExample_Example",
-                "Ladder.tptp"
+                "LevelCrossingExample",
+                "LevelCrossing.tptp"
             );
             
             string SafetyDirPath = Path.Combine(
                 sourceRootPath,
-                "CounterExample_Example/SafetyProperties"
+                "LevelCrossingExample/SafetyProperties"
             );
 
             string outputFilepath = "output.csv";

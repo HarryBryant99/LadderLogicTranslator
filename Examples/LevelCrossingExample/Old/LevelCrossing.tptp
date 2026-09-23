@@ -1,5 +1,3 @@
-fof(ax,axiom, vTrainApproaching_1 <=> (vTrainApproachingSensor_0)).
-fof(ax,axiom, vTrainPassed_1 <=> (vTrainPassedSensor_0)).
 fof(ax,axiom, vCarsCrossing_1 <=> (~vBarriersDown_0)).
 fof(ax,axiom, vLightsFlash_1 <=> ((vTrainApproach_0 | vLightsFlash_0) & ~vTrainPassed_0)).
 fof(ax,axiom, vBarriersDown_1 <=> ((vLightsFlash_0 | vBarriersDown_0) & ~vTrainPassed_0)).
